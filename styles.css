@@ -131,3 +131,58 @@ button.sunday {
   box-shadow: 0 3px 10px rgba(255, 99, 71, 0.25);
 }
 
+button.monday:hover,
+button.monday:focus {
+  background-color: #E6BE00; 
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(230, 190, 0, 0.5);
+  outline: none;
+}
+
+button.tuesday:hover,
+button.tuesday:focus {
+  background-color: #E05592; 
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(224, 85, 146, 0.5);
+  outline: none;
+}
+
+button.wednesday:hover,
+button.wednesday:focus {
+  background-color: #28A428; 
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(40, 164, 40, 0.5);
+  outline: none;
+}
+
+button.thursday:hover,
+button.thursday:focus {
+  background-color: #CC7300; 
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(204, 115, 0, 0.5);
+  outline: none;
+}
+
+button.friday:hover,
+button.friday:focus {
+  background-color: #166FCC; 
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(22, 111, 204, 0.5);
+  outline: none;
+}
+
+button.saturday:hover,
+button.saturday:focus {
+  background-color: #6A1FBF; 
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(106, 31, 191, 0.5);
+  outline: none;
+}
+
+button.sunday:hover,
+button.sunday:focus {
+  background-color: #CC4E39; 
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(204, 78, 57, 0.5);
+  outline: none;
+}
