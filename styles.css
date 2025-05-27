@@ -13,6 +13,8 @@ body {
   min-height: 100vh;
   padding: 40px 20px;
   color: #333;
+  min-height: screen;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -186,4 +188,15 @@ button.sunday:focus {
   color: #fff;
   box-shadow: 0 6px 18px rgba(204, 78, 57, 0.5);
   outline: none;
+}
+
+footer {
+    flex-wrap: wrap;
+    margin-top: 15em;
+}
+
+.d1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 9px;
 }
