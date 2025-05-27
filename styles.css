@@ -13,8 +13,10 @@ body {
   min-height: 100vh;
   padding: 40px 20px;
   color: #333;
-  min-height: screen;
   flex-wrap: wrap;
+
+ 
+
 }
 
 .container {
@@ -199,4 +201,11 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 9px;
+}
+
+.twin {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
 }
