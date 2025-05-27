@@ -4,14 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let box = null;
   let animationTimeout = null;
 
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const day = button.getAttribute('data-day');
-    });
-  });
-});
 
-const dayColors = {
+ const dayColors = {
   Monday: {
     start: '#FFD700',  
     end:   '#FFF7CC'    
@@ -42,28 +36,32 @@ const dayColors = {
   }
 };
 
-button.addEventListener('click', () => {
-  const day = button.getAttribute('data-day');
-  const colors = dayColors[day];
 
-  if (box) {
-    boxContainer.removeChild(box);
-    box = null;
-    clearTimeout(animationTimeout);
-  }
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const day = button.getAttribute('data-day');
+      const colors = dayColors[day];
 
-  box = document.createElement('div');
-  box.classList.add('animated-box');
-  box.style.top = '0px';
-  box.style.backgroundColor = colors.start;
-  box.style.boxShadow = `0 6px 15px ${colors.start}99`; 
-  boxContainer.appendChild(box);
+      if (box) {
+        boxContainer.removeChild(box);
+        box = null;
+        clearTimeout(animationTimeout);
+      }
 
-  box.getBoundingClientRect(); // force layout
+      box = document.createElement('div');
+      box.classList.add('animated-box');
+      box.style.top = '0px';
+      box.style.backgroundColor = colors.start;
+      box.style.boxShadow = `0 6px 15px ${colors.start}99`; 
+      boxContainer.appendChild(box);
 
-  animationTimeout = setTimeout(() => {
-    box.style.top = '110px';
-    box.style.backgroundColor = colors.end;
-    box.style.boxShadow = `0 10px 30px ${colors.end}bb`;
-  }, 100);
+      box.getBoundingClientRect();
+
+      animationTimeout = setTimeout(() => {
+        box.style.top = '110px';
+        box.style.backgroundColor = colors.end;
+        box.style.boxShadow = `0 10px 30px ${colors.end}bb`;
+      }, 100);
+    });
+  });
 });
