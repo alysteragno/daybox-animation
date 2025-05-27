@@ -59,3 +59,32 @@ button:active {
   transform: translateY(-1px);
   box-shadow: 0 4px 10px rgba(101, 58, 255, 0.2);
 }
+
+#box-container {
+  position: relative;
+  height: 300px;
+  perspective: 600px;
+}
+
+.animated-box {
+  width: 120px;
+  height: 120px;
+  background-color: #ff6f61; 
+  margin: 0 auto;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition:
+    top 1.6s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    background-color 1.6s ease,
+    box-shadow 1.6s ease;
+  box-shadow: 0 6px 15px rgba(255, 111, 97, 0.6);
+}
+
+.animated-box.moved {
+  top: 110px;
+  background-color: #3ad29f; 
+  box-shadow: 0 10px 30px rgba(58, 210, 159, 0.7);
+}
