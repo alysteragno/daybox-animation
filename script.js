@@ -10,3 +10,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+const dayColors = {
+  Monday: {
+    start: '#FFD700',  
+    end:   '#FFF7CC'    
+  },
+  Tuesday: {
+    start: '#FF69B4',   
+    end:   '#FFD9E6'    
+  },
+  Wednesday: {
+    start: '#32CD32',   
+    end:   '#DBFFDE'    
+  },
+  Thursday: {
+    start: '#FF8C00',   
+    end:   '#FFE5CC'    
+  },
+  Friday: {
+    start: '#1E90FF',   
+    end:   '#DBE9FF'    
+  },
+  Saturday: {
+    start: '#8A2BE2',   
+    end:   '#E6DBFF'    
+  },
+  Sunday: {
+    start: '#FF6347',   
+    end:   '#FFD7CC'    
+  }
+};
