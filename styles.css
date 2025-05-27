@@ -24,3 +24,38 @@ body {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+button {
+  flex: 1 1 120px;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f9f7ff; 
+  border: 2px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+}
+
+button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(101, 58, 255, 0.2);
+}
