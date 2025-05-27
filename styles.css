@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Manrope', sans-serif;
-  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  background: linear-gradient(135deg, #e8deff 0%, #d6ccff 50%, #f3eaff 100%);
   display: flex;
   justify-content: center;
   align-items: flex-start;
