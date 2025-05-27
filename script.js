@@ -41,3 +41,29 @@ const dayColors = {
     end:   '#FFD7CC'    
   }
 };
+
+button.addEventListener('click', () => {
+  const day = button.getAttribute('data-day');
+  const colors = dayColors[day];
+
+  if (box) {
+    boxContainer.removeChild(box);
+    box = null;
+    clearTimeout(animationTimeout);
+  }
+
+  box = document.createElement('div');
+  box.classList.add('animated-box');
+  box.style.top = '0px';
+  box.style.backgroundColor = colors.start;
+  box.style.boxShadow = `0 6px 15px ${colors.start}99`; 
+  boxContainer.appendChild(box);
+
+  box.getBoundingClientRect(); // force layout
+
+  animationTimeout = setTimeout(() => {
+    box.style.top = '110px';
+    box.style.backgroundColor = colors.end;
+    box.style.boxShadow = `0 10px 30px ${colors.end}bb`;
+  }, 100);
+});
