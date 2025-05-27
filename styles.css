@@ -88,3 +88,46 @@ button:active {
   background-color: #3ad29f; 
   box-shadow: 0 10px 30px rgba(58, 210, 159, 0.7);
 }
+
+button.monday {
+  background-color: #FFF7CC; 
+  color: #ffd900; 
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.25);
+}
+
+button.tuesday {
+  background-color: #FFD9E6; 
+  color: #FF69B4; 
+  box-shadow: 0 3px 10px rgba(255, 105, 180, 0.25);
+}
+
+button.wednesday {
+  background-color: #DBFFDE;
+  color: #32CD32; 
+  box-shadow: 0 3px 10px rgba(50, 205, 50, 0.25);
+}
+
+button.thursday {
+  background-color: #FFE5CC; 
+  color: #FF8C00; 
+  box-shadow: 0 3px 10px rgba(255, 140, 0, 0.25);
+}
+
+button.friday {
+  background-color: #DBE9FF; 
+  color: #1E90FF; 
+  box-shadow: 0 3px 10px rgba(30, 144, 255, 0.25);
+}
+
+button.saturday {
+  background-color: #E6DBFF; 
+  color: #8A2BE2; 
+  box-shadow: 0 3px 10px rgba(138, 43, 226, 0.25);
+}
+
+button.sunday {
+  background-color: #FFD7CC; 
+  color: #FF6347; 
+  box-shadow: 0 3px 10px rgba(255, 99, 71, 0.25);
+}
+
